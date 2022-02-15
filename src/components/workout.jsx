@@ -63,7 +63,7 @@ export default function Workout() {
     <>
       <h1> Add Your exercise!</h1>
       <AddWork onAddWork={handleAddWork} />
-      <ListWork exercises={work} onChangeItem={handleChangeWork} onDeleteWork={handleDeleteWork} />
+      <ListWork exercises={work} onChangeWork={handleChangeWork} onDeleteWork={handleDeleteWork} />
     </>
   );
 }

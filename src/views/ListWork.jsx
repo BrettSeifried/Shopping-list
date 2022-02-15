@@ -6,7 +6,7 @@ export default function ListWork({ exercises, onChangeWork, onDeleteWork }) {
     <ul>
       {exercises.map((work) => (
         <li key={work.id}>
-          <WorkDetail work={work} onChange={onChangeWork} onDelete={onDeleteWork} />
+          <WorkDetail work={work} onChangeWork={onChangeWork} onDelete={onDeleteWork} />
         </li>
       ))}
     </ul>
