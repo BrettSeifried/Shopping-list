@@ -25,7 +25,7 @@ function workReducer(items, action) {
         return item;
       });
     }
-    case 'deleted': {
+    case 'delete': {
       return items.filter((item) => item.id !== action.id);
     }
     default: {
@@ -63,7 +63,7 @@ export default function Workout() {
     <>
       <h1> Add Your exercise!</h1>
       <AddWork onAddWork={handleAddWork} />
-      <ListWork exercises={work} onChangeItem={handleChangeWork} onDeleteItem={handleDeleteWork} />
+      <ListWork exercises={work} onChangeItem={handleChangeWork} onDeleteWork={handleDeleteWork} />
     </>
   );
 }
