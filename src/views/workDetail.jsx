@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './workDetail.css';
 
 export default function WorkDetail({ work, onChangeWork, onDelete }) {
   const [editing, setEditing] = useState(false);
@@ -17,7 +18,7 @@ export default function WorkDetail({ work, onChangeWork, onDelete }) {
           }}
         />
 
-        <button type="button" onClick={() => setEditing(false)}>
+        <button className="editButton" type="button" onClick={() => setEditing(false)}>
           Save
         </button>
       </>
@@ -26,7 +27,7 @@ export default function WorkDetail({ work, onChangeWork, onDelete }) {
     workContent = (
       <>
         <h3>{work.text}</h3>
-        <button type="button" onClick={() => setEditing(true)}>
+        <button className="editButton" type="button" onClick={() => setEditing(true)}>
           Edit
         </button>
       </>
@@ -34,9 +35,9 @@ export default function WorkDetail({ work, onChangeWork, onDelete }) {
   }
 
   return (
-    <div>
-      <p>{workContent}</p>
-      <button type="button" onClick={() => onDelete(work.id)}>
+    <div className="exercise">
+      <p className="workContent">{workContent}</p>
+      <button className="submitButton" type="button" onClick={() => onDelete(work.id)}>
         Remove
       </button>
     </div>

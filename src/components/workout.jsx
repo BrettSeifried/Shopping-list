@@ -2,6 +2,7 @@ import React, { useReducer } from 'react';
 import { initialData } from '../data/initialData';
 import AddWork from '../views/AddWork';
 import ListWork from '../views/ListWork';
+import './workout.css';
 
 const nextId = 3;
 const workOut = initialData;

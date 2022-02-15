@@ -1,0 +1,18 @@
+.exercise {
+  display: flex;
+}
+
+.workContent {
+  display: flex;
+  align-items: center;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  margin: auto;
+}
+.editButton {
+  margin-left: 20%;
+}
