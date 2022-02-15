@@ -12,8 +12,13 @@ export default function AddWork({ onAddWork }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={newWork} placeholder="Add exercise here" />
-      <button type="submit">Submit</button>
+      <input
+        type="text"
+        value={newWork}
+        placeholder="Add exercise here"
+        onChange={(e) => setNewWork(e.target.value)}
+      />
+      <button type="submit">Add to Workout</button>
     </form>
   );
 }

@@ -1,8 +1,8 @@
 # Shopping list with reduce
 
-    [] connect pages
+    [x] connect pages
     [] Create form
-    [] create initial list
+    [x] create initial list
     [] allow form to add
     [] allow form to edit
     [] allow form to delete.
