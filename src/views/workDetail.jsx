@@ -26,8 +26,13 @@ export default function WorkDetail({ work, onChangeWork, onDelete }) {
   } else {
     workContent = (
       <>
-        <h3>{work.text}</h3>
-        <button className="editButton" type="button" onClick={() => setEditing(true)}>
+        <div>{work.text}</div>
+        <button
+          data-testid={`edit-${work.text}`}
+          className="editButton"
+          type="button"
+          onClick={() => setEditing(true)}
+        >
           Edit
         </button>
       </>
@@ -36,8 +41,13 @@ export default function WorkDetail({ work, onChangeWork, onDelete }) {
 
   return (
     <div className="exercise">
-      <p className="workContent">{workContent}</p>
-      <button className="submitButton" type="button" onClick={() => onDelete(work.id)}>
+      {workContent}
+      <button
+        data-testid={`${work.id}`}
+        className="submitButton"
+        type="button"
+        onClick={() => onDelete(work.id)}
+      >
         Remove
       </button>
     </div>
