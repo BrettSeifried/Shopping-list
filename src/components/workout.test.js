@@ -60,7 +60,7 @@ test('delete button works', async () => {
   );
 
   const exercise = screen.getByText(/burpee/i);
-  const removeButton = screen.getByTestId('remove-Burpee');
+  const removeButton = await screen.findByTestId('remove-Burpee');
   expect(removeButton).toBeInTheDocument();
 
   userEvent.click(removeButton);
