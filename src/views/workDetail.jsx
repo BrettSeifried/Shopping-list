@@ -43,7 +43,7 @@ export default function WorkDetail({ work, onChangeWork, onDelete }) {
     <div className="exercise">
       {workContent}
       <button
-        data-testid={`${work.id}`}
+        data-testid={`remove-${work.text}`}
         className="submitButton"
         type="button"
         onClick={() => onDelete(work.id)}
