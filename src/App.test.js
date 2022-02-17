@@ -10,6 +10,6 @@ test('Renders initial items', async () => {
   const editButton = screen.getByTestId('edit-Burpee');
   expect(editButton).toBeInTheDocument();
 
-  const removeButton = screen.getByTestId('0');
+  const removeButton = screen.getByTestId('remove-Burpee');
   expect(removeButton).toBeInTheDocument();
 });
