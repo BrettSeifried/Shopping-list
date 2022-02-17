@@ -3,6 +3,7 @@ import { initialData } from '../data/initialData';
 
 const nextId = 3;
 const workOut = initialData;
+const refresh = [];
 
 function workReducer(items, action) {
   switch (action.type) {
@@ -14,6 +15,9 @@ function workReducer(items, action) {
           text: action.text,
         },
       ];
+    }
+    case 'clear': {
+      return refresh;
     }
     case 'edit': {
       return items.map((item) => {
@@ -59,6 +63,13 @@ const PlannerProvider = ({ children }) => {
       id: taskId,
     });
   };
+
+  const handleClear = (taskId) => {
+    dispatch({
+      type: 'clear',
+      id: taskId,
+    });
+  };
   return (
     <PlannerContext.Provider
       value={{
@@ -66,6 +77,7 @@ const PlannerProvider = ({ children }) => {
         handleAddWork,
         handleChangeWork,
         handleDeleteWork,
+        handleClear,
       }}
     >
       {children}
