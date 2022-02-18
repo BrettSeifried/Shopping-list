@@ -1,25 +1,18 @@
-# Alchemy React Base Template
+# Shopping list with reduce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    [x] connect pages
+    [x] Create form
+    [x] create initial list
+    [x] allow form to add
+    [x] allow form to edit
+    [x] allow form to delete.
+    [x] test
+    [x] random number to workout
+    [] add dark mode
+    [] add timer
+    [] MORE
 
-Use this template for all your "from scratch" deliverables. To start, simply run
+# Enhanced
 
-- `npm install`
-- `npm start`
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    [x] Header w/ useContext
+    x[] customHooks for dispatch calls.

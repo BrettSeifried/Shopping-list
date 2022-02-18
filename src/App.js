@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Timer from './components/timer';
+import Workout from './components/workout';
+import { PlannerProvider } from './WorkContext/workContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PlannerProvider>
+      <Header />
+      <Workout />
+      <Timer seconds={30} />
+    </PlannerProvider>
   );
 }
 
