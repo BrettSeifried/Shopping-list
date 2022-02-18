@@ -6,13 +6,13 @@
     [x] allow form to add
     [x] allow form to edit
     [x] allow form to delete.
-    [] test
-    [] random number to workout
+    [x] test
+    [x] random number to workout
     [] add dark mode
     [] add timer
     [] MORE
 
 # Enhanced
 
-    [] Header w/ useContext
-    [] customHooks for dispatch calls.
+    [x] Header w/ useContext
+    x[] customHooks for dispatch calls.
