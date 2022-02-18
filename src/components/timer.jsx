@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './timer.css';
 
 export default function Timer({ seconds = 0 }) {
   const [paused, setPaused] = useState(true);
@@ -25,10 +26,11 @@ export default function Timer({ seconds = 0 }) {
   });
 
   return (
-    <div>
-      <p>{`${s.toString().padStart(2, '0')}`}</p>
+    <div className="timer">
+      <h1>Remove after completed</h1>
+      <h1>{`${s.toString().padStart(2, '0')}`}</h1>
       <div>{over ? "Time's up!" : ''}</div>
-      <button onClick={() => setPaused(!paused)}>{paused ? 'Resume' : 'Pause'}</button>
+      <button onClick={() => setPaused(!paused)}>{paused ? 'Start' : 'Pause'}</button>
       <button onClick={() => reset()}>Restart</button>
     </div>
   );
