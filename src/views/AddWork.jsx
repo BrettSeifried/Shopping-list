@@ -14,6 +14,7 @@ export default function AddWork({ onAddWork }) {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
+        required
         value={newWork}
         placeholder="Add exercise here"
         onChange={(e) => setNewWork(e.target.value)}
